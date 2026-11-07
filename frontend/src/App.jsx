@@ -10,7 +10,7 @@ function App() {
 
   // Load existing tasks from the server when the page opens
   useEffect(() => {
-    fetch('http://localhost:5000/api/read')
+    fetch('https://dreamy-tasks-backend.onrender.com')
       .then(response => response.json())
       .then(data => {
         if (Array.isArray(data)) {
